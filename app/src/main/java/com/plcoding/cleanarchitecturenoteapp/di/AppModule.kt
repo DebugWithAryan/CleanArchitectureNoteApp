@@ -10,11 +10,13 @@ import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.use_case.Delete
 import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.use_case.GetNote
 import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.use_case.GetNotesUseCase
 import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.use_case.NoteUseCase
+import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
+@Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
 

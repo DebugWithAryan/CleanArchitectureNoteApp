@@ -1,6 +1,7 @@
 package com.plcoding.cleanarchitecturenoteapp.feature_note.presentation.notes.components
 
 import android.R
+import android.R.attr.onClick
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -91,9 +92,7 @@ fun NoteItem(
             )
         }
         IconButton(
-            onClick = {
-                onDeleteClick
-            },
+            onClick = onDeleteClick,
             modifier = Modifier.align(Alignment.BottomEnd)
         ) {
             Icon(

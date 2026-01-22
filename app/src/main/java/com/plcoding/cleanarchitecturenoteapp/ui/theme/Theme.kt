@@ -1,11 +1,14 @@
 package com.plcoding.cleanarchitecturenoteapp.ui.theme
 
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.darkColors
+
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
-private val DarkColorPalette = darkColors(
+import androidx.compose.material3.darkColorScheme
+
+
+private val DarkColorScheme = darkColorScheme(
     primary = Color.White,
     background = DarkGray,
     onBackground = Color.White,
@@ -13,10 +16,11 @@ private val DarkColorPalette = darkColors(
     onSurface = DarkGray
 )
 
+
 @Composable
 fun CleanArchitectureNoteAppTheme(darkTheme: Boolean = true, content: @Composable() () -> Unit) {
     MaterialTheme(
-        colors = DarkColorPalette,
+        colorScheme = DarkColorScheme,
         typography = Typography,
         shapes = Shapes,
         content = content
